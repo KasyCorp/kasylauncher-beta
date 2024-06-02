@@ -1,5 +1,5 @@
+<link rel="stylesheet" href="/app/assets/css/launcher.css" />
 <div id="landingContainer" style="">
-
   <div id="upper">
     <div id="left">
       <div id="rightContainer">
@@ -12,10 +12,10 @@
         <div id="user_content">
           <div id="avatarContainer">
             <button id="avatarOverlay">
-              
+              <%- lang('landing.usernamePlaceholder') %>
             </button>
           </div>
-          <span id="user_text"></span>
+          <span id="user_text"><%- lang('landing.usernamePlaceholder') %></span>
         </div>
         <div id="mediaContent">
           <div id="internalMedia">
@@ -147,9 +147,7 @@
       </div>
     </div>
     <div id="content"></div>
-    <div id="right">
-      
-    </div>
+    <div id="right"></div>
   </div>
   <div id="lower">
     <div id="left">
@@ -248,11 +246,21 @@
         <div id="newsNavigationContainer">
           <button id="newsButtonl">
             <!--<img src="assets/images/icons/arrow.svg" id="newsButtonSVG"/>-->
-            <div id="newsButtonAlert" style="display: none;"></div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+            <div id="newsButtonAlert" style="display: none"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-arrow-up-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"
+              />
             </svg>
-        </button>
+          </button>
           <button id="newsNavigateLeft">
             <svg id="newsNavigationLeftSVG" viewBox="0 0 24.87 13.97">
               <defs>

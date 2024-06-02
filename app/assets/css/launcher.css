@@ -2619,7 +2619,9 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Main content container. */
 #landingContainer {
+
   height: 100%;
+  display: flex;
   position: relative;
   transition: background 2s ease;
   overflow-y: hidden;
@@ -2630,14 +2632,13 @@ input:checked + .toggleSwitchSlider:before {
   position: relative;
   transition: top 2s ease;
   top: 0px;
-  height: 77%;
+  height: 100%;
   display: flex;
 }
 
 #landingContainer > #upper > #left {
   display: inline-flex;
-  width: 15%;
-  height: 100%;
+
   justify-content: flex-end;
 }
 
@@ -2655,9 +2656,20 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Lower content container. */
 #landingContainer > #lower {
-  height: 23%;
+  padding: 30px 4px 70px 4px;
+  position: fixed;
+  border-radius: 0px 0px 0px 0px  ;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  will-change: transform;
+  transform: translateZ(0);
   display: flex;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  height: 50px;
+  background-color: #202020;
 }
 
 #landingContainer > #lower > #left {
@@ -2665,7 +2677,7 @@ input:checked + .toggleSwitchSlider:before {
   transition: top 2s ease;
   top: 0px;
   height: 100%;
-  width: 33%;
+
   display: inline-flex;
   justify-content: center;
 }
@@ -2699,7 +2711,7 @@ input:checked + .toggleSwitchSlider:before {
   transition: top 2s ease;
   top: 0px;
   height: 100%;
-  width: 33%;
+
   display: inline-flex;
 }
 
@@ -3173,7 +3185,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Right hand user content container. */
 #user_content {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -3227,15 +3239,10 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile name text. */
 #user_text {
-  font-size: 20px;
-  min-width: 135px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  text-shadow: 0px 0px 20px black;
-  position: absolute;
-  right: 95px;
-  text-align: right;
-  -webkit-user-select: initial;
+
+
+  position:  absolute;
+
 }
 
 /* Social media icon content container. */
